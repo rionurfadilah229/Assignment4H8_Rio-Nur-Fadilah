@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Section with Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#product">PRODUCT</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#inventory">INVENTORY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="profile-section" id="profile">
+        <div class="profile-card">
+            <div class="profile-left">
+                <img src="foto.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+            <div class="profile-right">
+                <div class="profile-main-info">
+                    <h3 id="name">Nama Anda</h3>
+                    <p id="role">Front End Designer</p>
+                    <button class="btn-edit" onclick="tampilkanForm()">Edit</button>
+                    <button class="btn-resume">Resume</button>
+                </div>
+                <div class="profile-info">
+                    <p><strong>Availability:</strong> <span id="availability">Full Time</span></p>
+                    <p><strong>Usia:</strong> <span id="usia">19</span></p>
+                    <p><strong>Lokasi:</strong> <span id="lokasi">Jakarta</span></p>
+                    <p><strong>Pengalaman:</strong> <span id="experience">2 tahun</span></p>
+                    <p><strong>Email:</strong> <span id="email">email@gmail.com</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="form-section" style="display: none;">
+            <h2>Section Form</h2>
+            <form id="editForm">
+                <label for="inputName">Name</label>
+                <input type="text" id="inputName" value="Nama Anda">
+
+                <label for="inputRole">Role</label>
+                <input type="text" id="inputRole" value="Front End Designer">
+
+                <label for="inputAvailability">Availability</label>
+                <input type="text" id="inputAvailability" value="Full Time">
+
+                <label for="inputUsia">Usia</label>
+                <input type="number" id="inputUsia" value="19">
+
+                <label for="inputLokasi">Lokasi</label>
+                <input type="text" id="inputLokasi" value="Jakarta">
+
+                <label for="inputExperience">Years Experience</label>
+                <input type="number" id="inputExperience" value="2">
+
+                <label for="inputEmail">Email</label>
+                <input type="email" id="inputEmail" value="email@gmail.com">
+
+                <button type="button" onclick="simpanData()">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

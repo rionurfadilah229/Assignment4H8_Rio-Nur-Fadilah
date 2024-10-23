@@ -1,0 +1,151 @@
+header {
+    background-color: #f5f5f5; 
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid #ccc; 
+    margin-bottom: 50px; 
+}
+
+header nav {
+    position: absolute;
+    right: 20px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(7, 2, 2);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile-section, .form-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.profile-left {
+    margin-right: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.profile-right {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-main-info {
+    flex: 1;
+}
+
+.profile-info {
+    flex: 1;
+    text-align: left;
+}
+
+.profile-info p {
+    margin: 10px 0;
+}
+
+.btn-edit, .btn-resume {
+    margin: 10px 5px 0 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-resume {
+    background-color: #fff; 
+    color: green; 
+    border: 2px solid green; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+
+.form-section {
+    display: none;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
